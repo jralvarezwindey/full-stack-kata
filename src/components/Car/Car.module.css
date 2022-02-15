@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 30px;
+  width: 400px;
+  height: 500px;
+  border: 4px solid black;
+}
+.header {
+  margin: 20px 17px;
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: auto;
+  padding: 10px;
+}
+#make {
+  margin-bottom: 4px;
+  font-size: 23px;
+  font-weight: bold;
+}
+#year {
+  margin-left: 25px;
+}
+#color {
+  margin-left: auto;
+}
