@@ -8,7 +8,7 @@ export default function Cars({cars}) {
       { 
         cars.map(car => {
           return (
-            <li key={car.id}> 
+            <li key={car.id || car.make}> 
               <Car data={ car }/>
             </li>
           )

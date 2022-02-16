@@ -7,6 +7,15 @@
   height: 500px;
   border: 4px solid black;
 }
+.separatorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 30px;
+  width: 400px;
+  height: 500px;
+  border: 4px solid black;
+}
 .header {
   margin: 20px 17px;
   font-size: 21px;
@@ -25,6 +34,13 @@
   margin-bottom: 4px;
   font-size: 23px;
   font-weight: bold;
+}
+#separatorMake {
+  margin-top: 30px;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 6px;
 }
 #year {
   margin-left: 25px;

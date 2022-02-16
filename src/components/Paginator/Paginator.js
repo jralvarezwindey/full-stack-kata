@@ -1,20 +1,17 @@
 import React from "react"
 import styles from "./Paginator.module.css"
 
-export default function Paginator({pages, currentPage, getCars}) {
+export default function Paginator({pages, currentPage, onPaginatorButtonClick}) {
   return (
       <div className={styles.paginator}> 
         {
           pages.map(pageNumber => {
             return (
               <button 
-                onClick={() => getCars(pageNumber)} 
+                onClick={() => onPaginatorButtonClick(pageNumber)} 
                 key={pageNumber}
-                className={styles.pageNumber}
-                id={pageNumber === currentPage && styles.selectedPageNumber}
-              >
-                {pageNumber}
-              </button>
+                className={pageNumber === currentPage ? styles.selectedPageNumber : styles.pageNumber}
+              > {pageNumber} </button>
             )
           })
         }

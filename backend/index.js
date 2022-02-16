@@ -17,7 +17,7 @@ const port = 8090;
 app.use(bodyParser.json());
 app.use(cors());
 app.use(randomDelay);
-app.use(randomFailureMiddleware(0.2));
+app.use(randomFailureMiddleware(0));
 
 const sortAndPaginateMiddleware = (sortAttr) => (req, res) => {
   const page = req.query.p;
